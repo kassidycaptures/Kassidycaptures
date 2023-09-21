@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Racing+Sans+One&family=Zilla+Slab&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Kassidycaptures</h1>
+    <main>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="house.jpg" alt="house"></div>
+              <div class="swiper-slide"><img src="redcar.jpg" alt="red car"></div>
+              <div class="swiper-slide"><img src="blue car.jpg" alt="blue car"></div>
+              <div class="swiper-slide"><img src="eye.jpg" alt="blue eye"></div>
+              <div class="swiper-slide"><img src="bridge.jpg" alt="a bridge"></div>
+              <div class="swiper-slide"><img src="bench.jpg" alt="a bench"></div>
+              <div class="swiper-slide"><img src="headstatues.jpg" alt="head statues"></div>
+              <div class="swiper-slide"><img src="butterfly.jpg" alt="butterfly"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+    <h2>Capturing the Moments</h2>
+    <p>Book Kassidy White to capture your <br>special moments and purchase prints!</p>
+        <input type="button" value="Book Now">
+</main>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  autoplay:{
+    delay:2500,
+    disableOnInteraction: false,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true
+  },
+});
+</script>
+</body>
+</html>
